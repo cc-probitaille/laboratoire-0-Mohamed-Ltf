@@ -1,9 +1,9 @@
 # Identification de l'étudiant
 
-- <nomComplet1>Entrer votre nom</nomComplet1>
-- <courriel1>Entrer votre courriel</courriel1>
-- <codeMoodle1>Entrer votre code moodle obtenu à partir de Signets, 2 lettres majuscule avec 5 chiffres</codeMoodle1>
-- <githubAccount1>Entrer l'identifiant de votre compte github</githubAccount1>
+- <nomComplet1>Mohamed Loutfi</nomComplet1>
+- <courriel1>mohamed.loutfi.1@ens.etsmtl.ca</courriel1>
+- <codeMoodle1>UNIVERSEL</codeMoodle1>
+- <githubAccount1>Mohamed-Ltf</githubAccount1>
 
 # Squelette pour un API simple dans Node, Express et TypeScript
 
@@ -155,13 +155,18 @@ Voici la même figure, mais sous forme de diagramme de séquence avec l'acteur. 
 #### Jouer aux dés
 
 1. Le Joueur demande à démarrer le jeu en s'identifiant.
-1. Le Joueur demande à lancer les dés.
-1. Le Système affiche le nom du joueur et le résultat de la partie, ainsi que le nombre de parties et le nombre de fois que le Joueur a gagné. Pour un lancer, si le total est égal à sept, le Joueur a gagné. Dans tous les autres cas, il a perdu.
+2. Le Joueur demande à lancer les dés.
+3. Le Système affiche le nom du joueur et le résultat de la partie, ainsi que le nombre de parties et le nombre de fois que le Joueur a gagné. Pour un lancer, si le total est égal à sept, le Joueur a gagné. Dans tous les autres cas, il a perdu.
 
 *Le Joueur répète l'étape 3 jusqu'à ce qu'il ait fini.*
 
 4. Le Joueur demande à terminer le jeu.
-1. ~~Le Système affiche un tableau de bord avec les noms des joueurs et le ratio des parties gagnées (nombre de fois gagné / nombre de lancers).~~
+5. ~~Le Système affiche un tableau de bord avec les noms des joueurs et le ratio des parties gagnées (nombre de fois gagné / nombre de lancers).~~
+
+#### Redémarrer
+
+1. Le Joueur demande à redémarrer l'application.
+2. Le Système termine tous les jeux en cours et redémarre l'application.
 
 ### Diagramme de cas d'utilisation
 
