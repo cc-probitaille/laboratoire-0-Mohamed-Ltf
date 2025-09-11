@@ -1,1 +1,14 @@
-// Vous devez complétéer ce fichier
+@@startuml RDCU pour redémarrerJeu
+title RDCU pour redémarrerJeu
+skinparam style strictuml
+-> ":JeuDeDes" : redemarrerJeu()
+note right 
+selon Contrôleur
+(JeuDeDés est 
+l'objet racine)
+end note
+":JeuDeDes" -> "joueurs: \n Map<String, Joueur>" : clear()
+note right 
+selon Expert
+end note
+@@enduml
