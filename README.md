@@ -312,7 +312,7 @@ La documentation des fonctionnalités se trouve dans le fichier [docs/Squelette.
   ![diagramme de cas d'utilisation](https://www.plantuml.com/plantuml/svg/NSjDQiCm48RXlKunk9jsuJjuxLMneVkfD7Q5zMD68neJSf_a7BvO94F0P3CCVC_R9K6Mx9roD0b81BRpdu2nJ5fi32ejDgp8w279vgXSjheMfsL5lU1Cum5gUDeCJPYTJ358G4_mGsmme48jaQ6FcJ839kXL3J7CZg0PjoJxtLC3LmNmMLL1-G9cVwIlWt_3nnh_3V6lorJHG6Nqo4nyYE4DzD2s9NjzWxgfZeB9tZq1 "diagramme de cas d'utilisation")
 
   <details>
-     <summary>Facultatif : faire en sorte que la documentation soit correctement liée aux fichiers `.puml`</summary><p>
+     <summary>[x] Facultatif : faire en sorte que la documentation soit correctement liée aux fichiers `.puml`</summary><p>
 
   *Question*: Comment faire en sorte que `docs/Squelette.md` affiche la version modifiée du fichier `docs/modeles/dcu.puml` après un *push* des fichiers vers GitHub?
   *Réponse*: Il faut modifier le markdown suivant dans `docs/Squelette.md`:
@@ -329,7 +329,7 @@ La documentation des fonctionnalités se trouve dans le fichier [docs/Squelette.
   </details>
 
   <details>
-     <summary>Facultatif : faire en sorte que la documentation soit correctement liée aux fichiers `.svg`</summary><p>
+     <summary>[ ] Facultatif : faire en sorte que la documentation soit correctement liée aux fichiers `.svg`</summary><p>
 
   *Question*: Comment faire en sorte que `Squelette.md` affiche la version modifiée du fichier `docs/modeles/dcu.puml` après un *push* des fichiers vers GitHub?
   *Réponse*: Il faut exporter les diagrammes puml à l'aide du menu contextuel  "Export current file diagrams" et modifier le markdown suivant dans `docs/Squelette.md`:
