@@ -2,6 +2,7 @@ import { De } from "./de";
 import { Joueur } from "./joueur";
 import { NotFoundError } from "./errors/notFoundError";
 import { AlreadyExistsError } from "./errors/alreadyExistsError";
+import { publicDecrypt } from "crypto";
 
 export class JeuDeDes {
     // classe contrôleur GRASP, car JeuDeDes est un objet racine dans le MDD
@@ -66,6 +67,10 @@ export class JeuDeDes {
         };
         // ne pas retourner l'objet de la couche domaine
         return JSON.stringify(resultat);
+    }
+
+    public redemarrerJeu(): void {
+        this._joueurs.clear();
     }
 
     // d'autres méthodes (des RDCU)
