@@ -289,7 +289,7 @@ La documentation des fonctionnalités se trouve dans le fichier [docs/Squelette.
   2. Le Système termine tous les jeux en cours et redémarre l'application.
   ```
 
-- [ ] ajouter le cas d'utilisation [au diagramme UML](docs/modeles/dcu.puml) (PlantUML)
+- [x] ajouter le cas d'utilisation [au diagramme UML](docs/modeles/dcu.puml) (PlantUML)
 
   - installer l'extension [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml) dans VSCode
 
