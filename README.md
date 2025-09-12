@@ -438,7 +438,7 @@ La documentation des fonctionnalités se trouve dans le fichier [docs/Squelette.
 
 - [x] faire un build (Node.js)
 
-  `npm run build` devrait passer sans erreurs. Si vous avez des erreurs, essayer de lire et de comprendre pourquoi. Si vous êtes bloqués pendant plus de 5 minutes, demandez de l'aide à un auxiliaire d'enseignement.
+  `npm run build` devrait passer sans erreurs. Si vous avez des erreurs, essayer de lire et de comprendre pourquoi. Si vous êtes bloqués pendant plus de 5 minutes, d emandez de l'aide à un auxiliaire d'enseignement.
 
 - [x] vérifier que les tests pour la nouvelle fonctionnalité redémarrerJeu passent: `npx jest --colors jeuRouter-redemarrerJeu-lab0.test.ts`. (Node.js)
 
@@ -530,7 +530,7 @@ Il existe un lien dans la barre de navigation «Classement» pour la page `/stat
 - [ ] Modifier le cas d'utilisation *Jouer aux dés* pour que le joueur lance **trois** dés plutôt que deux et la condition pour gagner soit que le *total soit inférieur ou égal à 10*. Il faut passer par toutes les étapes, y compris modifier le MDD, les contrats, les RDCU, les tests et le code. Cependant, cette fois-ci vous devez vous débrouiller, en vous référant à des étapes plus haut.
   [x] MDD
   [x] RDCU 
-  [ ] Code
+  [x] Code
   [ ] Test
   > ⚠️Certains tests de base du squelette lancés par `npx jest --colors --coverage --testPathIgnorePatterns=lab0.test.ts` ne seront plus bons, car ils valident les fonctionnalités du jeu avec **deux** dés.
   > Il faut les modifier pour la nouvelle fonctionnalité avec **trois** dés.
