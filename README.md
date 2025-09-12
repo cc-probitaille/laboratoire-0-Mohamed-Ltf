@@ -531,7 +531,7 @@ Il existe un lien dans la barre de navigation «Classement» pour la page `/stat
   [x] MDD
   [x] RDCU 
   [x] Code
-  [ ] Test
+  [x] Test
   > ⚠️Certains tests de base du squelette lancés par `npx jest --colors --coverage --testPathIgnorePatterns=lab0.test.ts` ne seront plus bons, car ils valident les fonctionnalités du jeu avec **deux** dés.
   > Il faut les modifier pour la nouvelle fonctionnalité avec **trois** dés.
   > Certains de ces tests sont plus difficiles à faire passer, notamment ceux dans `test/core/jeuDeDes.test.ts` qui valident les valeurs retournées par la méthode `brasser()`.
