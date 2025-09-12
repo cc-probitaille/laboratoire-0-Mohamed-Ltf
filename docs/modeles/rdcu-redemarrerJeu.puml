@@ -1,6 +1,7 @@
-@@startuml RDCU pour redémarrerJeu
-title RDCU pour redémarrerJeu
+@startuml
 skinparam style strictuml
+skinparam defaultfontname Verdana
+title RDCU pour redémarrerJeu
 -> ":JeuDeDes" : redemarrerJeu()
 note right
 selon Contrôleur
@@ -11,4 +12,4 @@ end note
 note right
 selon Expert
 end note
-@@enduml
+@enduml

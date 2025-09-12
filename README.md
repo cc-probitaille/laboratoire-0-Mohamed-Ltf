@@ -414,15 +414,15 @@ La documentation des fonctionnalités se trouve dans le fichier [docs/Squelette.
 
 ### 4. Écrire la fonctionnalité
 
-- [ ] ajouter l'opération système `redemarrerJeu` dans le contrôleur GRASP `src/core/jeuDeDes.ts` (TypeScript)
+- [x] ajouter l'opération système `redemarrerJeu` dans le contrôleur GRASP `src/core/jeuDeDes.ts` (TypeScript)
 
   Cette méthode correspond à l'opération système (unique) définie dans le diagramme de séquence système (DSS).
 
-- [ ] coder l'opération `redemarrerJeu` selon la RDCU (TypeScript)
+- [x] coder l'opération `redemarrerJeu` selon la RDCU (TypeScript)
 
   Pour la logique du code, consulter le diagramme de séquence (RDCU) créé à l'étape précédente.
 
-- [ ] ajouter une nouvelle route, dans `src/routes/jeuRouter.ts` (Express)
+- [x] ajouter une nouvelle route, dans `src/routes/jeuRouter.ts` (Express)
 
   - ajouter la fonction `redemarrerJeu`, juste avant la fonction `init()`
 
@@ -436,17 +436,17 @@ La documentation des fonctionnalités se trouve dans le fichier [docs/Squelette.
 
     Il s'agit d'une *définition de [route](http://expressjs.com/en/guide/routing.html)* dans *Express*. Lorsqu'il y aura une requête HTTP `GET` avec `api/v1/jeu/redemarrerJeu`, la fonction `redemarrerJeu` dans la même classe sera appelée (*callback*). Cette fonction est aussi appelée un *route handler* en anglais.
 
-- [ ] faire un build (Node.js)
+- [x] faire un build (Node.js)
 
   `npm run build` devrait passer sans erreurs. Si vous avez des erreurs, essayer de lire et de comprendre pourquoi. Si vous êtes bloqués pendant plus de 5 minutes, demandez de l'aide à un auxiliaire d'enseignement.
 
-- [ ] vérifier que les tests pour la nouvelle fonctionnalité redémarrerJeu passent: `npx jest --colors jeuRouter-redemarrerJeu-lab0.test.ts`. (Node.js)
+- [x] vérifier que les tests pour la nouvelle fonctionnalité redémarrerJeu passent: `npx jest --colors jeuRouter-redemarrerJeu-lab0.test.ts`. (Node.js)
 
-- [ ] vérifier que TOUS les tests des fonctionnalités de base passent (Node.js)
+- [x] vérifier que TOUS les tests des fonctionnalités de base passent (Node.js)
 
   `npx jest --colors --coverage --testPathIgnorePatterns=lab0.test.ts` devrait indiquer que tous les tests passent.
 
-- [ ] ajouter le bouton dans `views/index.pug` (PugJS.org)
+- [x] ajouter le bouton dans `views/index.pug` (PugJS.org)
 
   > Facultatif : pour une explication de PUG (anciennement Jade) avec Express, il y a [cette vidéo](https://www.youtube.com/watch?v=DSp9ExFw3Ig).
 
@@ -471,7 +471,7 @@ La documentation des fonctionnalités se trouve dans le fichier [docs/Squelette.
       button#redemarrer Redémarrer
   ```
 
-- [ ] ajouter le JavaScript pour le bouton afin d'invoquer le nouveau service
+- [x] ajouter le JavaScript pour le bouton afin d'invoquer le nouveau service
 
   Dans `public/lib/main.js` on trouve le code pour les boutons. Après la logique pour traiter le clic sur le bouton *Démarrer* (`demarrer.addEventListener("click", function(){...});`, ajouter une nouvelle logique pour le bouton *Redémarrer* qui fait un `GET` sur `/api/v1/jeu/redemarrerJeu`:
 
@@ -528,6 +528,10 @@ Il existe un lien dans la barre de navigation «Classement» pour la page `/stat
 ### 7. Pratiquer ce qui a été appris
 
 - [ ] Modifier le cas d'utilisation *Jouer aux dés* pour que le joueur lance **trois** dés plutôt que deux et la condition pour gagner soit que le *total soit inférieur ou égal à 10*. Il faut passer par toutes les étapes, y compris modifier le MDD, les contrats, les RDCU, les tests et le code. Cependant, cette fois-ci vous devez vous débrouiller, en vous référant à des étapes plus haut.
+  [x] MDD
+  [x] RDCU 
+  [ ] Code
+  [ ] Test
   > ⚠️Certains tests de base du squelette lancés par `npx jest --colors --coverage --testPathIgnorePatterns=lab0.test.ts` ne seront plus bons, car ils valident les fonctionnalités du jeu avec **deux** dés.
   > Il faut les modifier pour la nouvelle fonctionnalité avec **trois** dés.
   > Certains de ces tests sont plus difficiles à faire passer, notamment ceux dans `test/core/jeuDeDes.test.ts` qui valident les valeurs retournées par la méthode `brasser()`.
