@@ -23,4 +23,11 @@ describe('GET /api/v1/jeu/redemarrerJeu', () => {
     const response = await request.get('/api/v1/jeu/redemarrerJeu');
     expect(response.body.joueurs.length).toBe(0);
   });
+
+  //Pour que le test etape 10 passe
+  it('jouer après redémarrage doit renvoyer 404', async () => {
+    await request.get('/api/v1/jeu/redemarrerJeu');
+    const resp = await request.get('/api/v1/jeu/jouer/Jean-Marc');
+    expect(resp.status).toBe(404);
+  });
 });
