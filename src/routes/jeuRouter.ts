@@ -115,12 +115,13 @@ export class JeuRouter {
       // Appel de l'opération système dans le contrôleur GRASP
       this._controleurJeu.redemarrerJeu();
 
-      // Message 
+      // Message
       req.flash('info', "Application Redémarre");
 
       res.status(200).send({
         message: 'Success',
-        status: res.status
+        status: res.status,
+        joueurs: JSON.parse(this._controleurJeu.joueurs) //Pour verifier que la liste est vide dans le test
       });
     } catch (error) {
       this._errorCode500(error, req, res);

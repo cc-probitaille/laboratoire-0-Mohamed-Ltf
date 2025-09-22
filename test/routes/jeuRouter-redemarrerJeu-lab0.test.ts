@@ -19,9 +19,8 @@ describe('GET /api/v1/jeu/redemarrerJeu', () => {
     expect(response.type).toBe("application/json");
   });
 
-  //TO CHECK
   it('devrait avoir aucun joueur', async () => {
     const response = await request.get('/api/v1/jeu/redemarrerJeu');
-    expect(response.body.joueurs.size).toBe(0);
+    expect(response.body.joueurs.length).toBe(0);
   });
 });
